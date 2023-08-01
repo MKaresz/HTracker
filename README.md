@@ -22,7 +22,7 @@ To install the htracker package from github, first clone the repository.
 
 ```git clone https://github.com/MKaresz/HTracker.git```
 
-Then just run from that directory:
+Then just run from the application root directory:
 
 ```pip install .```
 
@@ -165,6 +165,12 @@ To try out the application we can load in predefined habits, with the "load-test
 
 ```python -m htracker analyse load-test-habits -c Y```
 
+
+### Uninstall
+***
+For uninstalling the application please use the pip uninstall command from the application folder. 
+
+```pip uninstall htracker```
 
 ***
 ### Thank you!
