@@ -168,7 +168,7 @@ To try out the application we can load in predefined habits, with the "load-test
 
 ### Uninstall
 ***
-For uninstalling the application please use the pip uninstall command from the application folder. 
+For uninstalling the application please use the pip uninstall command from the application root folder.
 
 ```pip uninstall htracker```
 
