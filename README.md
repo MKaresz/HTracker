@@ -40,11 +40,12 @@ Every command has ```--help``` argument to display the available information on 
 e.g.: ```"python -m htracker add-habit --help"```
 
 
-One can use the interactive CLI to enter the needed data into the application!
+Or you can use the interactive CLI to enter the needed data into the application after running a command.
+
+e.g.: ```"python -m htracker add-habit"```
 
 
-Available commands:
-### Menu overview:
+### Available commands
 ```
 ├── htracker
     ├── about              -> Prints out the app name and version number
@@ -85,7 +86,7 @@ Start the interactive 'add habit' process:
 
 ```python -m htracker add-habit```        
 
-Or add habit with its features as options in one command line -n name, -p periodicity, -d starting date.
+Or add habit with its features as options in one command line using -n name, -p periodicity, -d starting date.
 
 ```python -m htracker add-habit -n [name] -p [periodicity] -d [yyyy-mm-dd]```
 
@@ -124,6 +125,8 @@ Mark a habit completed for a period with the “check-off” command by giving a
 
 ```python -m htracker check-off -n [name] -d [yyyy-mm-dd]```
 
+### List check offs
+
 To list all of the check-offs for one habit use the “list-check-off“ command with the -n name argument.
 
 ```python -m htracker check-off```
@@ -131,34 +134,37 @@ To list all of the check-offs for one habit use the “list-check-off“ command
 
 ### List habits
 ***
-To get an overview of all of our habits we can use the "list-habits" command.
+To get an overview of all of your habits we can use the "list-habits" command.
 
 ```python -m htracker list-habits```
 
 ### Analyse habits
 ***
-In order to list the habits by periodicity, open the submenu with the “analyse“ command
+In order to list the habits by categories, open the submenu with the “analyse“ command
 and choose from the categories: periodicity, streak, struggle, or on-track.
 
-To analyse periodicity 1: -p periodicity [num of days]
+To analyse periodicity 1 [num of days] habits use: -p 1
 
 ```pyhon -m htracker analyse periodicity -p 1```
 
-To get all the habits ordered by on-track: -s sort by ascending "A" or descending "D"
+To get all the habits ordered by "on-track": -s A or D for ascending or descending list.
 
 ```python -m htracker analyse on-track -s A```
 
-To get habits sorted by the length of their streak, use the analyse streak' command. Or if the name argument left empty it will list all of the habits. n- name
+To get habits sorted by the length of their streaks, use after analyse the "streak" command. Or if the name argument left empty it will list all of the habits. n- name.
 
 ```python -m htracker analyse streak -n```
 
-To get the habit you struggled the most, use the 'struggle' command and give a date from you like to start the filter till today. - d start date.
+To get the habit you struggled the most, use the 'struggle' command and give a date from you like to start the filter till today use -d and date with the following format [YYYY-MM-DD].
 
 ```python -m htracker analyse struggle -d 2023-01-01```
 
 ### Load test habits
 ***
-To try out the application we can load in predefined habits, with the "load-test-habits" and use -c confirmation ("Y" or "N"). Be careful as the new habits will overwrite the existing habits.
+To try out the application we can load in predefined habits, with the "load-test-habits" command and use -c confirmation ("Y" or "N"). Be careful as the new habits will overwrite any existing habits.
+
+```python -m htracker analyse load-test-habits -c Y```
+
 
 ***
 ### Thank you!
